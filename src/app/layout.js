@@ -1,5 +1,9 @@
 import "./globals.css";
 import bg from '../../public/shapelined-_JBKdviweXI-unsplash.jpg';
+import MobileAlert from "./components/MobileAlert";
+import Nav from "./components/Nav";
+import PersonalBanner from "./components/PersonalBanner";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Harry Fry's Portfolio",
@@ -18,7 +22,16 @@ export default function RootLayout({ children }) {
         width: '100%',
         height: '100%'
       }}
-      >{children}</body>
+      >
+        <MobileAlert/>
+        <PersonalBanner/>
+        <Nav />
+              
+        {children}
+
+        <Footer/>
+      
+      </body>
     </html>
   );
 }

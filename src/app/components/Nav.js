@@ -1,34 +1,20 @@
 'use client';
 import Link from 'next/link';
 
-
 const Nav = () => {
   return (
-    <nav>
-      <ul>
-        <li>
+    <nav className="w-full flex justify-center py-4">
+      <ul className="flex list-none gap-5 md:gap-8 lg:gap-16 text-3xl">
+        <li className="font-mono">
           <Link href="/">Home</Link>
         </li>
-        <li>
+        <li className="font-mono">
           <Link href="/about">About</Link>
         </li>
-        <li>
+        <li className="font-mono">
           <Link href="/portfolio">Portfolio</Link>
         </li>
       </ul>
-      <style jsx>{`
-        ul {
-          list-style: none;
-          display: flex;
-          gap: 12rem;
-        }
-        li {
-          margin: 0;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-      `}</style>
     </nav>
   );
 };
