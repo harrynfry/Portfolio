@@ -1,5 +1,5 @@
 import "./globals.css";
-import bg from '../../public/shapelined-_JBKdviweXI-unsplash.jpg';
+import bg from '/public/images/shapelined-_JBKdviweXI-unsplash.jpg';
 import MobileAlert from "./components/MobileAlert";
 import Nav from "./components/Nav";
 import PersonalBanner from "./components/PersonalBanner";
@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
         {children}
 
         <Footer/>
+    
       
       </body>
     </html>

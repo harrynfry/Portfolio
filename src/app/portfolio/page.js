@@ -1,3 +1,7 @@
+import TicTacToe from "../components/TicTacToe";
+
 export default function(){
-    return <h1> HI</h1>
+    return( 
+        <TicTacToe/>
+    )
 }

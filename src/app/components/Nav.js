@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 const Nav = () => {
   return (
-    <nav className="w-full flex justify-center py-4">
-      <ul className="flex list-none gap-5 md:gap-8 lg:gap-16 text-3xl">
-        <li className="font-mono">
+    <nav className="w-full flex justify-center py-8 px-16">
+      <ul className="flex list-none text-xl gap-5 md:gap-8 md:text-2xl lg:gap-16 lg:text-3xl ">
+        <li className="font-mono underline hover:text-shadow">
           <Link href="/">Home</Link>
         </li>
-        <li className="font-mono">
-          <Link href="/about">About</Link>
+        <li className="font-mono underline hover:text-shadow"> 
+        <Link href="/about">About</Link>
         </li>
-        <li className="font-mono">
-          <Link href="/portfolio">Portfolio</Link>
+        <li className="font-mono underline hover:text-shadow">
+        <Link href="/portfolio">Portfolio</Link>
         </li>
       </ul>
     </nav>

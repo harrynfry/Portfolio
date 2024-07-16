@@ -7,9 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textShadow: {
+        'default': '2px 2px 4px rgba(0, 0, 0, 0.25)',  
+        'lg': '4px 4px 6px rgba(0, 0, 0, 0.3)',  
+        'none': 'none',  
+      },
       colors:{
         grey: {
-          DEFAULT: '#e2e8f0', // Adjust the color code as per your preference
+          DEFAULT: '#e2e8f0', 
         },
       },
       backgroundImage: {
@@ -19,5 +24,24 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [ 
+    function ({ addUtilities }) {
+    const newUtilities = {
+      '.text-shadow': {
+        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.25)',  // Default text shadow
+      },
+      '.text-shadow-lg': {
+        textShadow: '4px 4px 6px rgba(0, 0, 0, 0.3)',  // Large text shadow
+      },
+      '.text-shadow-none': {
+        textShadow: 'none',  // No text shadow
+      },
+      '.hover\\:text-shadow': {
+          '&:hover': {
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', // Text shadow on hover
+          },
+      },
+    };
+    addUtilities(newUtilities, ['responsive', 'hover']);
+  },],
 };
