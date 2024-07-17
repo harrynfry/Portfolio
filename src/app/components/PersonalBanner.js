@@ -28,4 +28,6 @@ const PersonalBanner = () => {
   );
 }
 
+PersonalBanner.displayName = 'PersonalBanner';
+
 export default PersonalBanner;

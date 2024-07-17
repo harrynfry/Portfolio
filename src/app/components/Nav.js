@@ -19,4 +19,6 @@ const Nav = () => {
   );
 };
 
+Nav.displayName = 'Nav';
+
 export default Nav;

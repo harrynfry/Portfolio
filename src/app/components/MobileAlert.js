@@ -28,5 +28,5 @@ const MobileAlert = () => {
     </div>
   );
 };
-
+MobileAlert.displayName = 'MobileAlert';
 export default MobileAlert;

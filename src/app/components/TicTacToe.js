@@ -59,4 +59,6 @@ const TicTacToe = () => {
   );
 };
 
+TicTacToe.displayName = 'TicTacToe';
+
 export default TicTacToe;
