@@ -1,7 +1,9 @@
 import TicTacToe from "../components/TicTacToe";
 
-export default function(){
+const PortfolioPage = () => {
     return( 
         <TicTacToe/>
     )
 }
+
+export default PortfolioPage;
