@@ -5,5 +5,8 @@ const AboutPage = () => {
       </div>
     );
   };
+
+ 
+AboutPage.displayName = 'AboutPage';
   
-  export default AboutPage;
+export default AboutPage;

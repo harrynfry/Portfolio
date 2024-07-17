@@ -6,4 +6,6 @@ const PortfolioPage = () => {
     )
 }
 
+PortfolioPage.displayName = 'PortfolioPage';
+
 export default PortfolioPage;
