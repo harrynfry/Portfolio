@@ -26,10 +26,11 @@ export default function RootLayout({ children }) {
         <MobileAlert/>
         <PersonalBanner/>
         <Nav />
+        
               
         {children}
 
-        <Footer/>
+      
     
       
       </body>

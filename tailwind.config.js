@@ -22,6 +22,15 @@ module.exports = {
         "gradient-conic":
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      borderStyle: {
+        dashed: 'dashed',
+        dotted: 'dotted',
+        double: 'double',
+        groove: 'groove',
+        ridge: 'ridge',
+        inset: 'inset',
+        outset: 'outset',
+      },
     },
   },
   plugins: [ 
